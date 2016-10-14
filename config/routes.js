@@ -35,7 +35,7 @@ module.exports.routes = {
   '/': {
     view: 'static/card'
   },
-  '/pay/card': 'VbvsecurecodeController.payCard',
+  '/pay': 'VbvsecurecodeController.payCard',
   '/confirm': 'VbvsecurecodeController.confirmPayment'
 
   /***************************************************************************
