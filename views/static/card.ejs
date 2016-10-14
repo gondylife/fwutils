@@ -1,0 +1,16 @@
+<form action="/pay/card" method="POST" class="form-card">
+	<h2 class="form-card-heading">Pay using your card</h2>
+	<input type="text" class="form-control" placeholder="Amount" name="amount" required />
+	<input type="text" class="form-control" placeholder="Card number" name="cardno" required />
+	<input type="text" class="form-control" placeholder="Expiry month" name="expirymonth" required />
+	<input type="text" class="form-control" placeholder="Expiry year" name="expiryyear" required />
+	<input type="text" class="form-control" placeholder="CVV" name="cvv" required />
+	<input type="hidden" value="VBVSECURECODE" name="authmodel" />
+	<input type="hidden" value="Godswill1234567890" name="custid" />
+	<input type="hidden" value="https://vbvsecurecode.herokuapp.com/confirm" name="responseurl" />
+	<input type="hidden" value="NGN" name="currency" />
+	<input type="hidden" value="Testing VBVSECURECODE" name="narration" />
+	<input type="hidden" value="tk_crHjS2nzEs" name="merchantid" />
+	<br />
+	<input type="submit" class="btn btn-lg btn-primary btn-block" value="Pay" />
+</form>
