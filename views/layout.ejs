@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%=typeof title == 'undefined' ? 'VBVSECURECODE Test' : title%></title>
+    <title><%=typeof title == 'undefined' ? 'Flutterwave Utils' : title%></title>
 
     <!-- Viewport mobile tag for sensible mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -31,13 +31,26 @@
     <!--STYLES-->
     <link rel="stylesheet" href="/styles/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/custom.css">
-    <link rel="stylesheet" href="/styles/custom.min.css">
     <link rel="stylesheet" href="/styles/importer.css">
     <!--STYLES END-->
   </head>
 
   <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/"> Flutterwave Utils</a>
+      </div>
+    </div>
     <%- body %>
+    <div class="container">
+      <hr />
+      <footer class="footer pull-right">
+        <div>
+          <a href="http://tripledes.herokuapp.com">Flutterwave Utils</a>
+          <div>A collection of all Flutterwave API Clients...</div>
+        </div>
+      </footer>
+    </div>
 
 
 
@@ -92,10 +105,9 @@
 
     <!--SCRIPTS-->
     <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/custom.js"></script>
-    <script src="/js/custom.min.js"></script>
-    <script src="/js/jquery.min.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>

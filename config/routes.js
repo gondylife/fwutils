@@ -33,10 +33,19 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
+    view: 'static/index'
+  },
+  '/payment': 'UtilsController.payment',
+  '/tripledes': 'UtilsController.tripledes',
+  '/vbvsecurecode': {
     view: 'static/card'
   },
-  '/pay': 'VbvsecurecodeController.payCard',
-  '/confirm': 'VbvsecurecodeController.confirmPayment'
+  '/pay': 'UtilsController.payCard',
+  '/confirm': 'UtilsController.confirmPayment',
+  '/generator': {
+    view: 'static/generator'
+  },
+  '/generate': 'UtilsController.generate'
 
   /***************************************************************************
   *                                                                          *

@@ -1,5 +1,5 @@
 /**
- * VbvsecurecodeController
+ * UtilsController
  *
  * @description :: Server-side logic for managing vbvsecurecodes
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
@@ -7,8 +7,14 @@
 
 module.exports = {
 
+	payment: function(req, res) {
+		res.redirect(301, "https://flutterwave.herokuapp.com");
+	},
+	tripledes: function(req, res) {
+		res.redirect(301, "https://tripledes.herokuapp.com");
+	},
 	payCard: function(req, res) {
-		VbvsecurecodeService.chargeCard(req)
+		UtilsService.chargeCard(req)
 		.then(function(response) {
 			if (response.status == "success" && response.data.responsecode == "02") {
 				res.redirect(301, response.data.authurl);
@@ -24,7 +30,10 @@ module.exports = {
 		} else {
 			return res.view('static/failure');
 		}
+	},
+	generate: function(req, res) {
+		var response = UtilsService.validateCard(4187426204456288)
+		console.log(response);
 	}
-	
 };
 
