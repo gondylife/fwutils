@@ -30,10 +30,6 @@ module.exports = {
 		} else {
 			return res.view('static/failure');
 		}
-	},
-	generate: function(req, res) {
-		var response = UtilsService.validateCard(4187426204456288)
-		console.log(response);
 	}
 };
 
