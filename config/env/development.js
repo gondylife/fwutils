@@ -21,6 +21,6 @@ module.exports = {
   //   connection: 'someMongodbServer'
   // }
   base_url: 'http://staging1flutterwave.co:8080/pwc/rest/',
-  api_key: 'tk_qWfXkx6ytHRn7u2BihmV'
+  api_key: 'tk_OyeUvuhgQiwcZIEK600D'
 
 };
